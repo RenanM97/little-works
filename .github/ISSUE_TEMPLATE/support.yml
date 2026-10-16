@@ -1,0 +1,35 @@
+name: Support request
+description: Ask a question or report a problem with a Little Works app.
+title: "[Support] "
+labels: ["support"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for getting in touch. This page is public, so please don't include personal information.
+  - type: dropdown
+    id: app
+    attributes:
+      label: App
+      options:
+        - Teleprompter
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      description: What did you try, and what happened?
+    validations:
+      required: true
+  - type: input
+    id: device
+    attributes:
+      label: iPhone model and iOS version
+      placeholder: e.g. iPhone 15, iOS 26.1
+  - type: input
+    id: version
+    attributes:
+      label: App version
+      description: Shown at the bottom of Settings in the app.
+      placeholder: e.g. 1.0 (1)
